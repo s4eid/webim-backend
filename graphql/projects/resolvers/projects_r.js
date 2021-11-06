@@ -5,7 +5,7 @@ const projectsResolver = {
         const data = await pool.query("SELECT * FROM projects");
         return data.rows;
       } catch (error) {
-        console.log(error);
+        // console.log(error);
       }
     },
   },

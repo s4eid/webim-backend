@@ -35,7 +35,7 @@ async function startApolloServer() {
   server.applyMiddleware({ app, cors: { origin: "*" } });
 
   await new Promise((resolve) => app.listen({ port: port }, resolve));
-  console.log(`🚀 Server ready at http://localhost:4000${server.graphqlPath}`);
+  // console.log(`🚀 Server ready at http://localhost:4000${server.graphqlPath}`);
   return { server, app };
 }
 
